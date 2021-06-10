@@ -1,8 +1,0 @@
-# Test samples generated with:
-# DY_M50_2016.root (NanoAODv5)
-bambooRun -m bamboo.analysismodules:NanoAODSkimmerModule --maxSelected=10 --keepOriginalBranches --distributed=worker --sample=DY_M50_2016 /storage/data/cms/store/mc/RunIISummer16NanoAODv5/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/NANOAODSIM/PUMoriond17_Nano1June2019_102X_mcRun2_asymptotic_v7_ext2-v1/120000/01EBB646-9AC2-124A-834C-C6CFADF3E6B7.root -o DY_M50_2016.root
-# DY_M50_2016postproc_JMEKin_bTagShape_puWeight.root (NanoAODv5, with NanoAODTools at 58272000e60654fccb8a5881a448c065382a7ff4)
-nano_postproc.py -I PhysicsTools.NanoAODTools.postprocessing.modules.jme.jetmetUncertainties jetmetUncertainties2016All -I PhysicsTools.NanoAODTools.postprocessing.modules.btv.btagSFProducer btagSF2016 -I PhysicsTools.NanoAODTools.postprocessing.modules.common.puWeightProducer puWeight_2016 --postfix=postproc_JMEKin_bTagShape_puWeight . DY_M50_2016.root
-# DY_M50_2017.root (NanoAODv5)
-bambooRun -m bamboo.analysismodules:NanoAODSkimmerModule --maxSelected=10 --keepOriginalBranches --distributed=worker --sample=DY_M50_2017 -o tests/data/DY_M50_2017.root /storage/data/cms/store/mc/RunIIFall17NanoAODv5/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8/NANOAODSIM/PU2017_12Apr2018_Nano1June2019_new_pmx_102X_mc2017_realistic_v7-v1/50000/01713AAF-8210-084D-B86F-CB16A7F39157.root
-# DY_M50_2017postproc_JMEKin_METFixEE2017.root: postprocessed with an instance of createJMECorrector(isMC=True, dataYear="2017", jesUncert="Total", redojec=True, jetType="AK4PFchs", noGroom=False, metBranchName="METFixEE2017")
